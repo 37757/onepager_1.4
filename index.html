@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mijn Skills Onepager</title>
+  <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#skills" class="nav__link">Mijn Skills</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section section--hero" id="home">
+      <div class="section__content">
+        <h1 class="section__title">Hoi, ik ben Julien Karch</h1>
+        <p class="section__subtitle">Welkom op mijn geweldige pagina, natuurlijk te verwachten van mij</p>
+      </div>
+    </section>
+
+    <section class="section section--skills" id="skills">
+      <div class="section__inner">
+        <img src="img/julien werkt.jpg" alt="Ik aan het werk" class="section__image" />
+        <div class="section__text">
+          <h2 class="section__title">Mijn Skills</h2>
+          <p class="section__description">
+            Ik kan goed html en css, en javascript gaat steeds beter, alleen moet ik beter worden in databases, prog en flex.
+            Maar dat gaat goed komen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="section__form-wrapper">
+        <h2 class="section__title">Contacteer mij</h2>
+        <form class="form" method="POST" action="mailto:jouw@email.nl">
+          <input type="text" name="naam" placeholder="Naam" required />
+          <input type="text" name="email" placeholder="Email" required />
+          <textarea name="bericht" placeholder="Je bericht" required></textarea>
+          <input type="hidden" name="send_to_mail" value="jouw@email.nl" />
+          <button type="submit">Versturen</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Julien Karch</p>
+  </footer>
+
 </body>
 </html>
