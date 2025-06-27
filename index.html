@@ -41,18 +41,18 @@
       </div>
     </section>
 
-    <section class="section section--contact" id="contact">
-      <div class="section__form-wrapper">
-        <h2 class="section__title">Contacteer mij</h2>
-        <form class="form" method="POST" action="mailto:jouw@email.nl">
-          <input type="text" name="naam" placeholder="Naam" required />
-          <input type="text" name="email" placeholder="Email" required />
-          <textarea name="bericht" placeholder="Je bericht" required></textarea>
-          <input type="hidden" name="send_to_mail" value="jouw@email.nl" />
-          <button type="submit">Versturen</button>
-        </form>
-      </div>
-    </section>
+  <section class="section section--contact" id="contact">
+    <div class="section__form-wrapper">
+      <h2 class="section__title">Contacteer mij</h2>
+      <form class="contact__form" onsubmit="versturen(); return false;">
+        <input type="text" name="naam" placeholder="Naam" required />
+        <input type="text" name="email" placeholder="Email" required />
+        <textarea name="bericht" placeholder="Je bericht" required></textarea>
+        <input type="hidden" name="send_to_mail" value="37757@ma-web.nl" />
+        <button type="submit">Versturen</button>
+      </form>
+    </div>
+  </section>
 
   </main>
 
